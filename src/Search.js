@@ -18,8 +18,15 @@ export default class Search extends Component {
   render() {
     return (
       <form onSubmit={event => this.handleSubmit(event)}>
-        <input type="text" onChange={event => this.handleInputChange(event)} />
-        <input type="submit" value="Search" className="btn btn-success" />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search for a city...."
+          autoFocus="on"
+          autoComplete="on"
+          onChange={event => this.handleInputChange(event)}
+        />
+        <br />
       </form>
     );
   }

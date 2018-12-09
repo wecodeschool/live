@@ -75,8 +75,10 @@ class App extends Component {
       return (
         <div>
           <Search refresh={this.refresh} city={this.state.city} />
+
           <header>
             <h1>{this.state.city}</h1>
+
             <p>
               {this.state.day} {this.state.time}
             </p>
