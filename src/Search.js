@@ -5,6 +5,7 @@ export default class Search extends Component {
     super(props);
     this.state = { city: this.props.city };
   }
+
   handleSubmit(event) {
     event.preventDefault();
     this.props.refresh(this.state.city);
