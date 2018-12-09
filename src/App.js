@@ -1,25 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div>
+        <header>
+          <h1>Lisbon</h1>
+          <p>Sunday 1:00PM</p>
+          <p>Sunny</p>
         </header>
+        <main className="clearfix">
+          <div id="preview" class="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt=""
+            />
+            <h2>
+              18<small>°C</small>
+            </h2>
+          </div>
+          <div id="details">
+            <ul>
+              <li>
+                <p>Precipitation: 0%</p>
+              </li>
+              <li>
+                <p>Humidity:55%</p>
+              </li>
+              <li>
+                <p>Wind: 11km/h</p>
+              </li>
+            </ul>
+          </div>
+        </main>
       </div>
     );
   }
